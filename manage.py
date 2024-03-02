@@ -19,3 +19,12 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+"""
+git init 初始化仓库
+git remote add origin 添加远程仓库端
+git add 追踪文件
+git commit 提交记录
+git push 推送文件
+git pull 拉取文件
+"""
