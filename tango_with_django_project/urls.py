@@ -17,9 +17,13 @@ from django.contrib import admin
 from django.urls import path, include
 from index import views
 
-# 1. 写路由 /123 去返回一个文本123
-# 2. 编写视图
+# 1. 创建一个新的应用User，访问两个url 1./dashboard return welcome dashboard
+#                                 2./profile => return : this is the profile
+# tips: Using python manage.py to create the new app.
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', include('index.urls'))
+    path('index/', include('index.urls')),
+    path('article/', include('Article.urls')),
+    path('user/', include('User.urls'))
+
 ]
